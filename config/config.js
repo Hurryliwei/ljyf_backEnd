@@ -1,0 +1,19 @@
+module.exports = {
+    environment:'dev',
+    database:{
+        dbName:'island',
+        host:'localhost',
+        port:3306,
+        user:'root',
+        password:'root'
+    },
+    security:{
+        secretKey:"javaWebTokenOfLiWei",
+        expiresIn:60*60*24*30
+    },
+    wx:{
+        appID:'wx4ccc09ba1931afbd',
+        appSecret:'3bc10f5b3ad0a9b0b73d69b0d8c49065',
+        loginUrl:'https://api.weixin.qq.com/sns/jscode2session?appid=%s&secret=%s&js_code=%s&grant_type=authorization_code'
+    }
+}
